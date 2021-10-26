@@ -1,0 +1,24 @@
+{
+  "name": "proxy_pay_hubtel",
+  "version": "1.0.0",
+  "description": "Proxy Pay for EventsMgr to forward request to Hubtel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/naabotoo/proxy_pay_hubtel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naabotoo/proxy_pay_hubtel/issues"
+  },
+  "homepage": "https://github.com/naabotoo/proxy_pay_hubtel#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  }
+}
