@@ -2,13 +2,14 @@ const express = require('express');
 const dotenv = require("dotenv");
 const https = require("https");
 const IndexResponse = require('./domains/indexResponse');
-const InitialCheckout = require('./services/initiateCheckout');
 
 const app = express()
 
 dotenv.config();
 
 const PORT = process.env.PORT;
+
+app.use(express.static('public'))
 
 //disable etag for server.
 app.set('etag', false);
