@@ -24,6 +24,12 @@ app.get("/", (req, res) => {
     res.json(msg);
 });
 
+app.get("/extra/fonts/:id", (req, res) => {
+  const font_name = req.params.id;
+  res.status(200);
+  res.sendFile(__dirname + '/public/fonts/'+ font_name);
+});
+
 app.post("/items/initiate", async (req, res) => {
     const body = req.body;
     console.log("body : "+ JSON.stringify(body));
